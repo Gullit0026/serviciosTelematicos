@@ -1,0 +1,17 @@
+zone "empresa.local" {
+	type slave;
+	masters { 192.168.50.3; };
+	file "/var/ib/bind/db.empresa.local";
+};
+
+zone "50.168.192.in-addr.arpa" {
+	type slave;
+	masters { 192.168.50.3; };
+	file "/var/lib/bind/db.192";
+};
+
+zone "julian-salamanca.com"{
+	type slave;
+	masters { 192.168.50.3; };
+	file "/var/lib/bind/db.julian-salamanca.com";
+};
